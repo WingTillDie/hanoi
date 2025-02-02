@@ -1,30 +1,9 @@
 # Tower of Hanoi Visualizer
 
-A Python program that visualizes the solution to the Tower of Hanoi puzzle by showing the sequence of moves between pegs.
-
-## Description
-
-This program implements a recursive solution to the Tower of Hanoi puzzle. It displays each move in an indented format, where:
-- `0`: Source peg
-- `1`: Temporary peg
-- `2`: Destination peg
-- Indentation shows the recursive depth of each move
-
-## Usage
-
-```bash
-python3 hanoi.py
-```
-
-Or make it executable and run:
-```bash
-chmod u+x hanoi.py
-./hanoi.py
-```
+Tower of Hanoi puzzle solution that visualizes recursion depth by indentation.
 
 ## Example Output
-
-For n=4 disks, the program will show the sequence of moves from peg 0 to peg 2:
+Moving 4 disks from source peg 0 to target peg 2, with peg 1 as spare peg, the program shows the solution as a sequence of moves:
 ```
       01
     02
@@ -44,14 +23,13 @@ For n=4 disks, the program will show the sequence of moves from peg 0 to peg 2:
 ```
 Each line shows a move from one peg to another. The indentation level represents the size of the disk being moved (more indentation = smaller disk).
 
-## Parameters
+## Description
 
-The `hanoi()` function takes the following parameters:
-- `s`: Source peg (starting position)
-- `d`: Destination peg (ending position)
-- `t`: Temporary peg (intermediate position)
-- `n`: Number of disks to move
-- `n_max`: Maximum number of disks (for indentation)
+This program implements a recursive solution to the Tower of Hanoi puzzle. It displays each move in an indented format, where:
+- `0`: Source peg
+- `1`: Temporary peg
+- `2`: Destination peg
+- Indentation shows the recursive depth of each move
 
 ## How It Works
 
@@ -61,6 +39,27 @@ The `hanoi()` function takes the following parameters:
    - Moves largest disk from source peg to destination peg
    - Moves n-1 disks from temporary peg to destination peg
 3. Indentation visualizes which disk is being moved
+
+## Usage
+
+```bash
+python3 hanoi.py
+```
+
+Or make it executable and run:
+```bash
+chmod u+x hanoi.py
+./hanoi.py
+```
+
+## Parameters
+
+The `hanoi()` function takes the following parameters:
+- `s`: Source peg
+- `d`: Destination peg (aka. target peg)
+- `t`: Temporary peg (aka. spare peg)
+- `n`: Number of disks to move
+- `n_max`: Maximum number of disks (for indentation)
 
 ## Requirements
 

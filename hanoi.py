@@ -3,8 +3,8 @@
 # Recursion function
 def hanoi(s: str, d: str, t: str, n: int, n_max: int) -> None:
     # s: source peg
-    # d: destination peg
-    # t: temporary peg, intermediatary peg
+    # d: destination peg, target peg
+    # t: temporary peg, intermediatary peg, spare peg
     # n: peg size
     # n_max: maximum peg size
     
