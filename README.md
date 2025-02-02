@@ -42,14 +42,14 @@ This program implements a recursive solution to the Tower of Hanoi puzzle. It di
 
 ## Usage
 
+Run the Python version:
 ```bash
-python3 hanoi.py
+make
 ```
 
-Or make it executable and run:
+Or run the C++ version:
 ```bash
-chmod u+x hanoi.py
-./hanoi.py
+make cc
 ```
 
 ## Parameters
@@ -64,6 +64,7 @@ The `hanoi()` function takes the following parameters:
 ## Requirements
 
 - Python 3
+- GCC (For compiling C++ code)
 
 ## License
 
