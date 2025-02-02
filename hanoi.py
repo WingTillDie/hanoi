@@ -11,8 +11,10 @@ def hanoi(s: str, d: str, t: str, n: int, n_max: int) -> None:
     # Boundary condition
     if n == 0: return
     hanoi(s=s, d=t, t=d, n=n-1, n_max=n_max)
+    # Print indentation
     for _ in range(n_max-n):
         print('  ', end='')
+    # Print move
     print(f'{s}{d}')
     hanoi(s=t, d=d, t=s, n=n-1, n_max=n_max)
 
